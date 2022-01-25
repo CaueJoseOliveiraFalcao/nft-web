@@ -1,0 +1,117 @@
+body{
+    background-color:hsl(217, 54%, 11%);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: hsl(215, 51%, 70%);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+main .content{
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    justify-content: center;
+    width: 425px;
+    padding: 30px;
+    border-radius: 10px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+ul{
+    padding: 0;
+    list-style: none;
+    
+}
+ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+ul li h1{
+    color: white;
+    
+}
+
+#desc{
+    font-size: 23px;
+    color: gray;
+    padding: 0;
+    margin: 0;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;    
+}
+hr{
+    width: 100%;
+    margin-bottom: 2rem;
+    color: gray;
+    background-color: gray;
+    margin: 0;
+    margin-bottom: 0.9rem;
+}
+ul li h1{
+    align-items: flex-start;
+    margin-left: -10rem;
+}
+ul li section{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    color: hsl(178, 100%, 50%);
+}
+#img-nft{
+    width: 419px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.perfil{
+    margin-top: 0;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.perfil img{
+    width: 15%;
+    border-radius: 4rem;
+    border-style: solid;
+    color: white;
+    border-width: 1px;
+}
+
+@media (max-width:425px){
+    main .content{
+        width: 70%;
+        
+    }
+    #img-nft{
+       width: 100%;
+    }
+
+    .content h1{
+        font-size: 25px;
+        align-items: flex-start;
+    }
+    #desc{
+        font-size: 16px;
+    }
+    ul li section p{
+        font-size: 13px;
+    }
+}
